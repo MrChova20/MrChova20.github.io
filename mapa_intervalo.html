@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cd4540d9521372154de1a0a01de39d07 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cd4540d9521372154de1a0a01de39d07" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cd4540d9521372154de1a0a01de39d07 = L.map(
+                "map_cd4540d9521372154de1a0a01de39d07",
+                {
+                    center: [43.088, 12.0549],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4572dd37b6af4ae84fbd7e76d42a3f40 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4572dd37b6af4ae84fbd7e76d42a3f40.addTo(map_cd4540d9521372154de1a0a01de39d07);
+        
+    
+            var tile_layer_6c10cf84322c46ee5f61701721045dc8 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/40610a3e8ce2c1fed2db8b37248acedd-07a31abfd46efe3210d6719bd3ce5f9b/tiles/{z}/{x}/{y}",
+                {"attribution": "escribanoychova_Tecnologias de la Informacion Geografica", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6c10cf84322c46ee5f61701721045dc8.addTo(map_cd4540d9521372154de1a0a01de39d07);
+        
+    
+            var tile_layer_95b06b72b930c16d42dd9528206d2a3f = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/63b118a44399e1d7637d47fd5dc7f090-2034712e0cc4d4a506958a4f548fad2d/tiles/{z}/{x}/{y}",
+                {"attribution": "escribanoychova_Tecnologias de la Informacion Geografica", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_95b06b72b930c16d42dd9528206d2a3f.addTo(map_cd4540d9521372154de1a0a01de39d07);
+        
+    
+            var tile_layer_433d7f7b24b1683129221fa6375aea71 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/748b854cd4d71d088a1a2dd7529617e4-e428df167e70ac99e3d5ad2dafdc21b1/tiles/{z}/{x}/{y}",
+                {"attribution": "escribanoychova_Tecnologias de la Informacion Geografica", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_433d7f7b24b1683129221fa6375aea71.addTo(map_cd4540d9521372154de1a0a01de39d07);
+        
+    
+            var tile_layer_e46e2087bf502d2001e645a18ae9e26f = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/d7c8b3cd5c5edabb9ccfeb27cc63f600-ac5a449bf1cae5e14e87a7d94479f96d/tiles/{z}/{x}/{y}",
+                {"attribution": "escribanoychova_Tecnologias de la Informacion Geografica", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e46e2087bf502d2001e645a18ae9e26f.addTo(map_cd4540d9521372154de1a0a01de39d07);
+        
+    
+            var layer_control_f582c4e917b2db1a6f3005428c79ca47_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4572dd37b6af4ae84fbd7e76d42a3f40,
+                },
+                overlays :  {
+                    "SLD intervalos lansat8_2022_1" : tile_layer_6c10cf84322c46ee5f61701721045dc8,
+                    "SLD intervalos lansat8_2023_2" : tile_layer_95b06b72b930c16d42dd9528206d2a3f,
+                    "SLD intervalos lansat9_2022_1" : tile_layer_433d7f7b24b1683129221fa6375aea71,
+                    "SLD intervalos lansat9_2023_2" : tile_layer_e46e2087bf502d2001e645a18ae9e26f,
+                },
+            };
+            let layer_control_f582c4e917b2db1a6f3005428c79ca47 = L.control.layers(
+                layer_control_f582c4e917b2db1a6f3005428c79ca47_layers.base_layers,
+                layer_control_f582c4e917b2db1a6f3005428c79ca47_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_cd4540d9521372154de1a0a01de39d07);
+
+        
+</script>
+</html>
